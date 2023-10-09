@@ -1,0 +1,170 @@
+html {
+    background-color: #010101;
+    color: #8a939e;
+}
+
+body {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 16px;
+    line-height: 1.6rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 200;
+    color: white;
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 4.4rem;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+}
+
+.text-centered {
+    text-align: center;
+}
+
+.underlined {
+    display: inline-block;
+    border-bottom: 4px solid #5b32a5;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #0d111780;
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid #2f353c;
+    z-index: 1000;
+}
+
+.header .cta {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 1.3rem;
+    font-family: 'DM Sans', sans-serif;
+    color: white;
+}
+
+.header .logo {
+    display: inline-block;
+}
+
+.header .logo img {
+    width: 180px;
+}
+
+.hero {
+    padding-top: 180px;
+    padding-bottom: 100px;
+    background-image: url('../images/pxfuel.jpg');
+    background-size: cover;
+    -webkit-backdrop-filter: opacity(10%);
+    backdrop-filter: opacity(10%);
+    min-height: 540px;
+}
+
+.hero .column {
+    display: flex;
+    align-items: center;
+}
+
+.hero .column img {
+    width: 480px;
+}
+
+.hero h1 {
+    color: white;
+}
+
+.sub-hero,
+.values {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.columns {
+    display: grid;
+    flex-direction: row;
+    grid-gap: 60px;
+}
+
+.columns.two {
+    grid-template-columns: 1fr 1fr;
+}
+
+.columns.three {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.columns .column {
+
+}
+
+.telcos {
+    text-align: center;
+}
+
+.telcos img {
+    width: auto;
+    height: 80px;
+    margin: 20px;
+    opacity: 70%;
+}
+
+.footer {
+    background-color: #0d1117;
+    border-top: 1px solid #2f353c;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #8a939e;
+}
+
+@media only screen and (max-width: 720px) {
+    h1 {
+        font-size: 3rem;
+        line-height: 3.4rem;
+    }
+
+    .hero h1 {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .hero .column img {
+        width: 100%;
+    }
+
+    .columns.two {
+        grid-template-columns: none;
+        grid-template-rows: min-content 1fr;
+    }
+}
