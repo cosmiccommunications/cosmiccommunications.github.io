@@ -100,6 +100,7 @@ div {
 }
 
 .hero h1 {
+    width: 100%;
     color: white;
 }
 
@@ -123,10 +124,6 @@ div {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.columns .column {
-
-}
-
 .telcos {
     text-align: center;
 }
@@ -147,10 +144,33 @@ div {
     color: #8a939e;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 997px) {
     h1 {
-        font-size: 3rem;
+        font-size: 2rem;
         line-height: 3.4rem;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+
+
+    h2 {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    .wrapper {
+        padding: 20px;
+    }
+
+    .header a.logo {
+        text-align: center;
+    }
+
+    .header .cta {
+        display: none;
+        font-size: 0.8rem;
+        justify-content: center;
     }
 
     .hero h1 {
@@ -163,8 +183,35 @@ div {
         width: 100%;
     }
 
+    .header .columns.two {
+        grid-gap: 0;
+    }
+
+    .columns {
+        grid-gap: 20px;
+    }
+
     .columns.two {
         grid-template-columns: none;
         grid-template-rows: min-content 1fr;
+    }
+
+    .columns.three {
+        grid-template-columns: none;
+        grid-template-rows: min-content min-content min-content;
+    }
+
+    .sub-hero,
+    .values {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .telcos img {
+        height: 40px;
+    }
+
+    .footer {
+        font-size: 0.8rem;
     }
 }
