@@ -92,6 +92,7 @@ div {
     -webkit-backdrop-filter: opacity(10%);
     backdrop-filter: opacity(10%);
     min-height: 540px;
+    overflow: hidden;
 }
 
 .hero .column {
@@ -101,6 +102,7 @@ div {
 
 .hero .column img {
     width: 480px;
+    z-index: 1;
 }
 
 .hero h1 {
@@ -146,6 +148,98 @@ div {
     padding-bottom: 20px;
     text-align: center;
     color: #8a939e;
+}
+
+.animation {
+    z-index: 0;
+}
+
+span.star {
+    z-index: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgb(73, 167, 243)  ;
+    animation:  animate 3s linear infinite;
+}
+
+span.star::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 1px;
+    background: linear-gradient(90deg, #57bcfb, transparent);
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(315deg) translateX(0);
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(315deg) translateX(-1500px);
+        opacity: 0;
+
+    }
+}
+
+span.star:nth-child(1){
+    top: 0;
+    right: 0;
+    left:initial;
+    animation-delay:0 ;
+    animation-duration: 1s;
+}
+
+span.star:nth-child(2){
+    top: 0;
+    right: 80px;
+    left:initial;
+    animation-delay:0.2s;
+    animation-duration: 1s;
+}
+
+span.star:nth-child(3){
+    top: 80px;
+    right: 0px;
+    left:initial;
+    animation-delay:0.4s ;
+    animation-duration: 0.5s;
+}
+
+span.star:nth-child(4){
+    top: 0;
+    right: 180px;
+    left:initial;
+    animation-delay:0.6s;
+    animation-duration: 1.5s;
+}
+
+span.star:nth-child(5){
+    top: 0;
+    right: 400px;
+    left:initial;
+    animation-delay:0.8s;
+    animation-duration: 2.5s;
+}
+
+span.star:nth-child(6){
+    top: 0;
+    right: 600px;
+    left:initial;
+    animation-delay:1s ;
+    animation-duration: 3s;
 }
 
 @media only screen and (max-width: 997px) {
