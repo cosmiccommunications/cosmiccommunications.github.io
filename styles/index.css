@@ -165,6 +165,7 @@ span.star {
     border-radius: 50%;
     box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgb(73, 167, 243)  ;
     animation:  animate 3s linear infinite;
+    transform: rotate(240deg);
 }
 
 span.star::before{
@@ -179,7 +180,7 @@ span.star::before{
 
 @keyframes animate {
     0% {
-        transform: rotate(315deg) translateX(0);
+        transform: rotate(240deg) translateX(0);
         opacity: 1;
     }
 
@@ -188,7 +189,7 @@ span.star::before{
     }
 
     100% {
-        transform: rotate(315deg) translateX(-1500px);
+        transform: rotate(240deg) translateX(-1500px);
         opacity: 0;
 
     }
@@ -196,49 +197,43 @@ span.star::before{
 
 span.star:nth-child(1){
     top: 0;
-    right: 0;
-    left:initial;
-    animation-delay:0 ;
+    left: 0;
+    animation-delay: 0;
     animation-duration: 1s;
 }
 
 span.star:nth-child(2){
     top: 0;
-    right: 80px;
-    left:initial;
-    animation-delay:0.2s;
+    left: 80px;
+    animation-delay: 0.2s;
     animation-duration: 1s;
 }
 
 span.star:nth-child(3){
     top: 80px;
-    right: 0px;
-    left:initial;
-    animation-delay:0.4s ;
+    left: 65%;
+    animation-delay: 0.4s;
     animation-duration: 0.5s;
 }
 
 span.star:nth-child(4){
     top: 0;
-    right: 180px;
-    left:initial;
-    animation-delay:0.6s;
+    left: 54%;
+    animation-delay: 0.6s;
     animation-duration: 1.5s;
 }
 
 span.star:nth-child(5){
     top: 0;
-    right: 400px;
-    left:initial;
-    animation-delay:0.8s;
+    left: 87%;
+    animation-delay: 0.8s;
     animation-duration: 2.5s;
 }
 
 span.star:nth-child(6){
     top: 0;
-    right: 600px;
-    left:initial;
-    animation-delay:1s ;
+    left: 70%;
+    animation-delay: 1s;
     animation-duration: 3s;
 }
 
