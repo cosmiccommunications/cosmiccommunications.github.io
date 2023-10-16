@@ -152,6 +152,7 @@ div {
 
 .animation {
     z-index: 0;
+    overflow: hidden;
 }
 
 span.star {
